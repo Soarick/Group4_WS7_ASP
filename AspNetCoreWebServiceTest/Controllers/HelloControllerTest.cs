@@ -11,7 +11,6 @@ namespace AspNetCoreWebServiceTest.Controllers
             HelloController controller = new HelloController();
             var response = controller.Get().Value as Response;
             Assert.Equal("Hello World!", response.Output);
-            print(response.Output);
         }
 
         [Theory]
